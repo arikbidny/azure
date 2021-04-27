@@ -165,3 +165,15 @@ invoke-expression .\temp.csv
 $names = Import-csv .\temp.csv
 $names | format-table
 ```
+
+- Functions
+
+```
+function Add-Numbers
+{
+    param([int]$num1, [int]$num2)
+    $num1 + $num2
+}
+
+Add-Numbers -num1 123 -num2 456
+```
