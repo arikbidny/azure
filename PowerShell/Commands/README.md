@@ -177,3 +177,14 @@ function Add-Numbers
 
 Add-Numbers -num1 123 -num2 456
 ```
+
+- Iterate over Object
+
+```
+$subnetList = @{"sub1" = "10.0.0.0/24"; "sub2" = "10.0.1.0/24"}
+
+$subnetList.GetEnumerator() | ForEach-Object {
+    $_.Key
+    $_.Value
+}
+```
