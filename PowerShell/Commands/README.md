@@ -188,3 +188,21 @@ $subnetList.GetEnumerator() | ForEach-Object {
     $_.Value
 }
 ```
+
+- Convert to Json
+
+```
+(Get-UICulture).Calendar | ConvertTo-Json
+
+{
+  "MinSupportedDateTime": "0001-01-01T00:00:00",
+  "MaxSupportedDateTime": "9999-12-31T23:59:59.9999999",
+  "AlgorithmType": 1,
+  "CalendarType": 1,
+  "Eras": [
+    1
+  ],
+  "TwoDigitYearMax": 2029,
+  "IsReadOnly": true
+}
+```
