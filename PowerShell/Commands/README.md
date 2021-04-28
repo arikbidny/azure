@@ -206,3 +206,9 @@ $subnetList.GetEnumerator() | ForEach-Object {
   "IsReadOnly": true
 }
 ```
+
+- Convert From Json
+
+```
+Get-Content JsonFile.JSON | ConvertFrom-Json
+```
